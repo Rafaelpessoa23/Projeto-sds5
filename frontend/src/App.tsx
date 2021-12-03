@@ -1,12 +1,19 @@
+import { DataTable } from 'Components/DataTable/DataTable';
+import { Footer } from 'Components/Footer/Footer';
+import { NavBar } from 'Components/NavBar';
 import React from 'react';
 
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='text-primary'>Olá, Mundo!</h1>
-    </div>
+    <>
+      <NavBar />
+      <div className="container">
+        <h1 className='text-primary'>Olá, Mundo!</h1>
+        <DataTable />
+      </div>
+      <Footer />
+    </>
   );
 }
-
 export default App;
